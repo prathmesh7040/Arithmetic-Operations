@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Arithmetic Operations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Arithmetic Operations</h2>
+
+    <div class="input-group">
+      <input type="number" id="num1" placeholder="First number">
+      <input type="number" id="num2" placeholder="Second number">
+    </div>
+
+    <div class="button-group">
+      <button class="op-btn add" onclick="setOperator('+', this)">Addition</button>
+      <button class="op-btn sub" onclick="setOperator('-', this)">Subtraction</button>
+      <button class="op-btn mul" onclick="setOperator('*', this)">Multiplication</button>
+      <button class="op-btn div" onclick="setOperator('/', this)">Division</button>
+    </div>
+
+    <button class="result-btn" onclick="showResult()">Show Result</button>
+
+    <div class="result" id="resultText"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
